@@ -14,5 +14,6 @@ namespace BackendEcommerce.Models
         public DateTime Creation { get; set; }
         public DateTime Expired { get; set; }
 
+        public User? User { get; set; } 
     }
 }
