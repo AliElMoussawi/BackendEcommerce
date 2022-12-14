@@ -41,3 +41,5 @@ C:\DEV\backend-ec\BackendEcommerce\BackendEcommerce\bin\Debug\net6.0\DocumentFor
 C:\DEV\backend-ec\BackendEcommerce\BackendEcommerce\bin\Debug\net6.0\System.IO.Packaging.dll
 C:\DEV\backend-ec\BackendEcommerce\BackendEcommerce\bin\Debug\net6.0\Humanizer.dll
 C:\DEV\backend-ec\BackendEcommerce\BackendEcommerce\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\DEV\backend-ec\BackendEcommerce\BackendEcommerce\bin\Debug\net6.0\AutoMapper.dll
+C:\DEV\backend-ec\BackendEcommerce\BackendEcommerce\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

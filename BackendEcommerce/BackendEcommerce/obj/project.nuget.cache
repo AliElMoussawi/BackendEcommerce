@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "c6PkaPqJ4pFJXB7RceckVQ4I9rc9Rd2wmzhIDc71CPQoZUxZ+MjGbHfbHg/fwEtrW2DsSdNhq9VsE/sTLKVl/g==",
+  "dgSpecHash": "nlHVhV5nVQLRneFpIOjTLtAsO+ToC4o2QkDMiRla/HF87TIu9r/Q6qFGhQ/p/wzNrI4NRhjqTSLFp9EW8lS7/w==",
   "success": true,
   "projectFilePath": "C:\\DEV\\backend-ec\\BackendEcommerce\\BackendEcommerce\\BackendEcommerce.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Ctop\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Ctop\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Ctop\\.nuget\\packages\\documentformat.openxml\\2.18.0\\documentformat.openxml.2.18.0.nupkg.sha512",
     "C:\\Users\\Ctop\\.nuget\\packages\\entityframework\\6.0.0\\entityframework.6.0.0.nupkg.sha512",
     "C:\\Users\\Ctop\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Ctop\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Ctop\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.0\\microsoft.entityframeworkcore.6.0.0.nupkg.sha512",
     "C:\\Users\\Ctop\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.0\\microsoft.entityframeworkcore.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Ctop\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.0\\microsoft.entityframeworkcore.analyzers.6.0.0.nupkg.sha512",

@@ -12,7 +12,9 @@ var str = builder.Configuration["ConnectionStrings:DefaultConnection"];
 builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(str, ServerVersion.AutoDetect(str)));
   
 builder.Services.AddControllers();
+builder.Services.AddScoped<ProductRepository, ProductService>();
 builder.Services.AddScoped<UserRepository, UserService>();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

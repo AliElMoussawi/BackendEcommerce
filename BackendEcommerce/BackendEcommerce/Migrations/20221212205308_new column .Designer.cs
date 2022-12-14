@@ -3,6 +3,7 @@ using System;
 using BackendEcommerce.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BackendEcommerce.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221212205308_new column ")]
+    partial class newcolumn
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -74,9 +76,6 @@ namespace BackendEcommerce.Migrations
                         .HasColumnType("decimal(65,30)");
 
                     b.Property<int?>("ProductCategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("Quantity")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -167,10 +166,10 @@ namespace BackendEcommerce.Migrations
                     b.Property<string>("Email")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("FirstName")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("UserName")
+                    b.Property<string>("LastName")
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
@@ -192,7 +191,7 @@ namespace BackendEcommerce.Migrations
             modelBuilder.Entity("BackendEcommerce.Models.Product", b =>
                 {
                     b.HasOne("BackendEcommerce.Models.ProductCategory", "ProductCategory")
-                        .WithMany("Products")
+                        .WithMany()
                         .HasForeignKey("ProductCategoryId");
 
                     b.Navigation("ProductCategory");
@@ -205,7 +204,7 @@ namespace BackendEcommerce.Migrations
                         .HasForeignKey("ProductId");
 
                     b.HasOne("BackendEcommerce.Models.User", "User")
-                        .WithMany("Reviews")
+                        .WithMany()
                         .HasForeignKey("UserId");
 
                     b.Navigation("Product");
@@ -216,7 +215,7 @@ namespace BackendEcommerce.Migrations
             modelBuilder.Entity("BackendEcommerce.Models.Session", b =>
                 {
                     b.HasOne("BackendEcommerce.Models.User", "User")
-                        .WithMany("Sessions")
+                        .WithMany()
                         .HasForeignKey("UserId");
 
                     b.Navigation("User");
@@ -225,32 +224,15 @@ namespace BackendEcommerce.Migrations
             modelBuilder.Entity("BackendEcommerce.Models.User", b =>
                 {
                     b.HasOne("BackendEcommerce.Models.Country", "Country")
-                        .WithMany("Users")
+                        .WithMany()
                         .HasForeignKey("CountryId");
 
                     b.Navigation("Country");
                 });
 
-            modelBuilder.Entity("BackendEcommerce.Models.Country", b =>
-                {
-                    b.Navigation("Users");
-                });
-
             modelBuilder.Entity("BackendEcommerce.Models.Product", b =>
                 {
                     b.Navigation("Reviews");
-                });
-
-            modelBuilder.Entity("BackendEcommerce.Models.ProductCategory", b =>
-                {
-                    b.Navigation("Products");
-                });
-
-            modelBuilder.Entity("BackendEcommerce.Models.User", b =>
-                {
-                    b.Navigation("Reviews");
-
-                    b.Navigation("Sessions");
                 });
 #pragma warning restore 612, 618
         }
