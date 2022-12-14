@@ -9,5 +9,7 @@ namespace BackendEcommerce.Repositories
         User GetUser(int id);
         User GetUser(string email);
         bool UserExist(int id);
+        bool UserExist(string userName);
+        User Add(User user);
     }
 }

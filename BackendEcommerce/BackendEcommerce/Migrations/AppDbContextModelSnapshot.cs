@@ -142,8 +142,9 @@ namespace BackendEcommerce.Migrations
                     b.Property<DateTime>("Expired")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<int>("Token")
-                        .HasColumnType("int");
+                    b.Property<string>("Token")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<int?>("UserId")
                         .HasColumnType("int");

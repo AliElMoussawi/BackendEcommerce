@@ -43,3 +43,11 @@ C:\DEV\backend-ec\BackendEcommerce\BackendEcommerce\bin\Debug\net6.0\Humanizer.d
 C:\DEV\backend-ec\BackendEcommerce\BackendEcommerce\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\DEV\backend-ec\BackendEcommerce\BackendEcommerce\bin\Debug\net6.0\AutoMapper.dll
 C:\DEV\backend-ec\BackendEcommerce\BackendEcommerce\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\DEV\backend-ec\BackendEcommerce\BackendEcommerce\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\DEV\backend-ec\BackendEcommerce\BackendEcommerce\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\DEV\backend-ec\BackendEcommerce\BackendEcommerce\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\DEV\backend-ec\BackendEcommerce\BackendEcommerce\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\DEV\backend-ec\BackendEcommerce\BackendEcommerce\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\DEV\backend-ec\BackendEcommerce\BackendEcommerce\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\DEV\backend-ec\BackendEcommerce\BackendEcommerce\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\DEV\backend-ec\BackendEcommerce\BackendEcommerce\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

@@ -23,7 +23,7 @@ namespace BackendEcommerce.Controllers
         [HttpGet]
         [ProducesResponseType(200,Type=typeof(IEnumerable<User>))]
         [ProducesResponseType(400)]
-        public IActionResult getUsers()
+        public IActionResult GetUsers()
         {
            var users =mapper.Map<List<UserDto>>(userRepository.GetUsers());
           if(!ModelState.IsValid)//model state check that the gien model satisfies 
