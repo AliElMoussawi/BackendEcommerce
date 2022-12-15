@@ -43,6 +43,7 @@ namespace BackendEcommerce.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("HashedPassword")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<int?>("UserId")
@@ -137,13 +138,15 @@ namespace BackendEcommerce.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime>("Creation")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("datetime(6)");
 
-                    b.Property<DateTime>("Expired")
+                    b.Property<DateTime?>("Expired")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<int>("Token")
-                        .HasColumnType("int");
+                    b.Property<string>("Token")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<int?>("UserId")
                         .HasColumnType("int");

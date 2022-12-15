@@ -24,5 +24,15 @@ namespace BackendEcommerce.Services
         {
             return context.Users.Any(p => p.Id == id);
         }
+        public bool UserExist(string userName)//this function will return true if user exist 
+        {
+            return context.Users.Any(p => p.UserName ==userName);
+        }
+        public User Add(User user)
+        {
+            context.Users.Add(user);
+            context.SaveChanges();
+            return user;
+        }
     }
 }

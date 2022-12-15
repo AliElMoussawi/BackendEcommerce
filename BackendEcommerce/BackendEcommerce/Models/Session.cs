@@ -7,12 +7,14 @@ namespace BackendEcommerce.Models
     public class Session
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
-        public int Token { get; set; }
+        public String? Token { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public DateTime Creation { get; set; } = DateTime.UtcNow;
+        public DateTime? Expired { get; set; }
 
-        public DateTime Creation { get; set; }
-        public DateTime Expired { get; set; }
 
         public User? User { get; set; } 
     }
