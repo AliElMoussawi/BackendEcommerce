@@ -1,6 +1,10 @@
 ﻿using BackendEcommerce.Models;
 using BackendEcommerce.Repositories;
+using DocumentFormat.OpenXml.Spreadsheet;
+using Microsoft.AspNetCore.Mvc.Diagnostics;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using System.Net;
+using System.Web.Http;
 
 namespace BackendEcommerce.Services
 {
@@ -32,6 +36,38 @@ namespace BackendEcommerce.Services
             if (review.Count() <= 0)
                 return 0;
             return ((decimal)review.Sum(r => r.Rating)! / review.Count());
+        }
+        public bool ProductExist(int id)
+        {
+            return context.Users.Any(p => p.Id == id);
+        }
+        public Product AddProduct(Product product)
+        {
+
+            context.Products.Add(product);
+            context.SaveChanges();
+            return product;
+
+        }
+        public Product UpdateProduct(Product product,int id)
+        {
+            Product UpdateProduct = GetProduct(id);
+            if (UpdateProduct != null)
+            {
+            }
+                return null;
+        }
+        public Product DeleteProduct(int id) {
+            var product=GetProduct(id);
+            if (product != null)
+            {
+                context.Products.Remove(product);
+            }
+            return product;}
+
+        public Product UpdateProduct(Product product)
+        {
+            throw new NotImplementedException();
         }
     }
 }

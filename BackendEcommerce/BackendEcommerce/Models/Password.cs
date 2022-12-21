@@ -11,7 +11,7 @@ namespace BackendEcommerce.Models
         [Required]
         public string? HashedPassword { get; set;}
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public DateTime CreationDate { get; set; } = DateTime.UtcNow
+        public DateTime CreationDate { get; set; } = DateTime.UtcNow;
         public bool Valid { get; set; }
     }
 }

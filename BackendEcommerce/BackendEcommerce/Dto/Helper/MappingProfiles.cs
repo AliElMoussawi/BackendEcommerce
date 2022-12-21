@@ -9,6 +9,8 @@ namespace BackendEcommerce.Dto.Helper
         public MappingProfiles()
         {
             CreateMap<User, UserDto>();
+            CreateMap<Product, ProductDto>();
+            CreateMap<ProductDto, Product>();
         }
     }
 }
